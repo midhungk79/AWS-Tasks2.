@@ -8,5 +8,9 @@ https://prnt.sc/dh0ybQjMoI_D
 https://prnt.sc/OeUu_SrIRIyA
 https://prnt.sc/LtWSKx2rA7IO
 
+#!bin/bash
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y 
+
 
 
