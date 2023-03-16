@@ -12,5 +12,34 @@ https://prnt.sc/LtWSKx2rA7IO
 sudo amazon-linux-extras install epel -y
 sudo yum install stress -y 
 
+2. Deploy 2 EC2 instance with an httpd application using autoscaling group. Attach an ALB to ASG. Then terminate any one of the instance and check if ASG creates a new instance.
+
+
+#!/bin/bash
+
+# Update the instance
+sudo yum update -y
+
+# Install httpd
+sudo yum install -y httpd
+
+# Start and enable httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+
+
+
+https://prnt.sc/P7yQCtT3wEHw
+https://prnt.sc/wIV-lZ_HjjU2
+https://prnt.sc/4A39qrdOaQEN
+https://prnt.sc/v7We7zAS3dlZ
+https://prnt.sc/7eqI0N__tu2U
+https://prnt.sc/t9ts2j7t1I_c
+
+While terminated its  created  new one and its in running status. 
+
+https://prnt.sc/n8M9sPeISagi
+
 
 
