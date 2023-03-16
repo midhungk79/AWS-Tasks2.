@@ -1,0 +1,12 @@
+1. Create an AutoScaling Group to deploy 2 EC2 instance and stress it to scale out to 4 instance using target tracking policy.
+
+https://prnt.sc/aZbt-Y9_0ME6
+https://prnt.sc/b29PBub9f0Ia
+https://prnt.sc/y7ZxxxyAbyG8
+https://prnt.sc/0XqXIDlUjT1U
+https://prnt.sc/dh0ybQjMoI_D
+https://prnt.sc/OeUu_SrIRIyA
+https://prnt.sc/LtWSKx2rA7IO
+
+
+
