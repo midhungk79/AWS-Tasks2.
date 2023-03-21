@@ -104,6 +104,19 @@ https://prnt.sc/IoygbB4fMQ2a
 while updating namserver its shows that propagation delay aroud 24-48 hours. 
 
 
+The result is.  
+
+https://prnt.sc/jvT0xSsPuYJB
+
+;; ANSWER SECTION:
+comeplaywithme.net.	60	IN	A	18.224.201.185
+comeplaywithme.net.	60	IN	A	18.189.80.24
+
+;; ANSWER SECTION:
+comeplaywithme.net.	21600	IN	NS	ns-1457.awsdns-54.org.
+comeplaywithme.net.	21600	IN	NS	ns-2005.awsdns-58.co.uk.
+comeplaywithme.net.	21600	IN	NS	ns-475.awsdns-59.com.
+comeplaywithme.net.	21600	IN	NS	ns-626.awsdns-14.net.
 
 
 
