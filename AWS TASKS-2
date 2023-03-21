@@ -46,3 +46,68 @@ https://prnt.sc/n8M9sPeISagi
 
 
 
+
+
+
+
+
+TASKS - ROUTE53
+1. Deploy an instance with httpd application in private subnet. Attach an load balancer. Purchase a domain using namecheap/any domain registrar and attach it to the hosted zone. Then route the domain to alb.
+
+
+
+
+Created  vpc with private subnet and public subnet. 
+Created a ec2 instance in private subnet.  
+
+
+#!/bin/bash
+yum update -y
+yum install -y httpd
+echo "<html><body><h1>Welcome to my website!</h1><p>This is a test page created using a userdata script.</p></body></html>" > /var/www/html/index.html
+service httpd start
+chkconfig httpd on
+
+Created a natgateway for the private subnet.  
+
+Launched a load ballancer and attached the ec2 instance to it.  
+
+while calling the load balancer dns  getting result as below. 
+
+
+https://prnt.sc/gyiw9sGhvrMi
+
+
+added my domain from the google regsistar to route53.  
+
+the dns details as below   
+
+
+https://prnt.sc/V1yGjWiHEtzk
+
+https://prnt.sc/Vn70SbMbALER
+
+
+
+while  running it on skip dns getting as below   alredy addeed http and https port for each secuirity groups. 
+
+https://prnt.sc/pHojgMCJC4dr
+
+
+while running normally getting as below.  
+
+
+https://prnt.sc/IoygbB4fMQ2a
+
+
+
+while updating namserver its shows that propagation delay aroud 24-48 hours. 
+
+
+
+
+
+
+
+
+
